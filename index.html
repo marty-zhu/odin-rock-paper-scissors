@@ -29,6 +29,12 @@
     }
 
     <!-- compare the users choice and the computer's choice -->
+    function compare(user, computer) {
+          if (user === computer) {
+                console.log("It's a tie!");
+                restartGame();
+          }:
+    };
       <!-- if choice are the same then it's a tie -->
         <!-- restart the game -->
       <!-- if user chose rock and comp chose paper, then comp wins -->
@@ -38,6 +44,7 @@
       <!-- if user chose scissor and comp chose rock, then comp wins -->
       <!-- if user chose scissor and comp chose paper, then user wins -->
     <!-- show whether the user won or lost -->
+    compare(choice, compChoice);
     <!-- ask if the user wants to replay -->
     <!-- if user answers "yes", then restart the game -->
   </script>
