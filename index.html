@@ -36,7 +36,10 @@
           } else if (user === 1 && compChoice === 2) {
                 console.log("You lose! Paper beats Rock!")
                 return 1;
-          };
+          } else if (user === 1 && compChoice === 3) {
+                console.log("You win! Rock beats Scissor!")
+                return 0;
+          }
     };
       <!-- if choice are the same then it's a tie -->
         <!-- restart the game -->
