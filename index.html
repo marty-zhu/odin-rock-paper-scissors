@@ -33,7 +33,10 @@
           if (user === computer) {
                 console.log("It's a tie!");
                 restartGame();
-          }:
+          } else if (user === 1 && compChoice === 2) {
+                console.log("You lose! Paper beats Rock!")
+                return 1;
+          };
     };
       <!-- if choice are the same then it's a tie -->
         <!-- restart the game -->
