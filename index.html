@@ -11,27 +11,39 @@
     const input = prompt("Rock[1], Paper[2], or Scissor[3]?");
     let score = {
           'user': 0,
-          'computer': 0,
+          'comp': 0,
           'tie': 0,
         };
 
     <!-- for each round in a five round game -->
+    function playRound() {
 
+          <!-- ask the user to make a choice -->
+          let choice = parseInt(input);
+          console.log(options[choice - 1]);
 
-    <!-- ask the user to make a choice -->
-    let choice = parseInt(input);
-    console.log(options[choice - 1]);
+          <!-- show what the computer's choice was -->
+          let compChoice = getRandInt(1, 4);
+          console.log(options[compChoice - 1]);
+
+          <!-- show whether the user won or lost -->
+          result = compare(choice, compChoice);
+
+          <!-- record the results of each game -->
+          if (result === 0) {
+                score.user++;
+          } else if (result === 1) {
+                score.comp++;
+          } else {
+                score.tie++;
+          }
+    }
 
     <!-- let the computer randomly choose an option -->
     function getRandInt(min, max) {
           rand = Math.random() * (max - min) + min;
           return Math.floor(rand);
     };
-
-    let compChoice = getRandInt(1, 4);
-      <!-- show what the computer's choice was -->
-    console.log(options[compChoice - 1]);
-
     function restartGame() {
           location.reload()
     }
@@ -41,7 +53,7 @@
       <!-- if choice are the same then it's a tie -->
           if (user === computer) {
                 console.log("It's a tie!");
-                restartGame();
+                return 2;
       <!-- if user chose rock and comp chose paper, then comp wins -->
           } else if (user === 1 && compChoice === 2) {
                 console.log("You lose! Paper beats Rock!");
@@ -68,11 +80,6 @@
                 return 0;
           }
     };
-
-    <!-- show whether the user won or lost -->
-    compare(choice, compChoice);
-
-    <!-- record the results of each game -->
 
     <!-- ask if the user wants to replay -->
     restart = prompt("Do you want to play again? [y/n]")
