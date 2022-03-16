@@ -94,7 +94,15 @@
           <!-- continue until 5 rounds -->
           round++;
         }
+
     <!-- report on overall score -->
+    if (score.comp > score.user) {
+          console.log(`You lost to the computer ${score.user} to ${score.comp}...`);
+    } else if (score.comp < score.user) {
+          console.log(`You beat the computer ${score.user} to ${score.comp}!`);
+    } else {
+          console.log(`It was a tie! ${score.user} to ${score.comp}.`)
+    }
 
     <!-- ask if the user wants to replay -->
     restart = prompt("Do you want to play again? [y/n]")
