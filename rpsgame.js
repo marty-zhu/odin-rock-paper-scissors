@@ -17,15 +17,15 @@ function playRound() {
       <!-- ask the user to make a choice -->
       const input = prompt("Rock[1], Paper[2], or Scissor[3]?");
 
-      let choice = parseInt(input);
+      let userChoice = parseInt(input);
       let compChoice = getRandInt(1, 4);
 
       <!-- show what the computer's choice was -->
-      console.log(`You: ${options[choice - 1]}`);
+      console.log(`You: ${options[userChoice - 1]}`);
       console.log(`Comp: ${options[compChoice - 1]}`);
 
       <!-- show whether the user won or lost -->
-      result = compare(choice, compChoice);
+      result = compare(userChoice, compChoice);
 
       <!-- record the results of each game -->
       if (result === 0) {
@@ -43,7 +43,7 @@ function restartGame() {
 
 // compare the users choice and the computer's choice -->
 function compare(user, computer) {
-  <!-- if choice are the same then it's a tie -->
+  <!-- if choices are the same then it's a tie -->
       if (user === computer) {
             console.log("It's a tie!");
             return 2;
