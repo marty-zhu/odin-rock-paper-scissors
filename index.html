@@ -8,7 +8,6 @@
   <h1>let's play Rock-Paper-Scissors!</h1>
   <script>
     const options = ['rock', 'paper', 'scissor'];
-    const input = prompt("Rock[1], Paper[2], or Scissor[3]?");
     let score = {
           'user': 0,
           'comp': 0,
@@ -25,6 +24,7 @@
     function playRound() {
 
           <!-- ask the user to make a choice -->
+          const input = prompt("Rock[1], Paper[2], or Scissor[3]?");
           let choice = parseInt(input);
           console.log(options[choice - 1]);
 
@@ -94,8 +94,6 @@
           round++;
         }
     <!-- report on overall score -->
-
-    <!-- playRound(); -->
 
     <!-- ask if the user wants to replay -->
     restart = prompt("Do you want to play again? [y/n]")
