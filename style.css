@@ -23,6 +23,15 @@ div.game-interface {
 
 /* game arena CSS */
 
-
+div.game-area {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
 
 /* round results CSS */
+
+div.round-result {
+    display: flex;
+    align-items: center;
+}
