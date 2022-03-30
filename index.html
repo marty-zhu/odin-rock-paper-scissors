@@ -8,38 +8,44 @@
 </head>
 <body>
   <div class="container">
-    <h1>let's play Rock-Paper-Scissors!</h1>
+    <h1>Let's play Rock-Paper-Scissors!</h1>
     
     <!-- this is the game interface -->
     <div class="game-interface">
 
       <!-- this is the left side score board -->
       <div class="scores">
+        <p class="title-text">Game Score</p>
         <div class="score">
-          <p><span>0</span></p>
+          <p>Computer Scores: 
+          <span id="comp-score" class="score-text">0</span></p>
         </div>
         <div class="score">
-          <p><span>0</span></p>
+          <p>User Score: 
+          <span id="user-score" class="score-text">0</span></p>
         </div>
         <div class="score">
-          <p><span>0</span></p>
+          <p>Ties: 
+          <span id="tie-score" class="score-text">0</span></p>
         </div>
       </div>
 
       <!-- this is the center game arena area -->
       <div class="game-area">
-        <div id="comp-display" class="window"><img src="" alt=""></div>
-        <div id="user-display" class="window"><img src="" alt=""></div>
+        <div id="comp-display" class="window">Computer: 
+          <img src="" alt="placeholder img"></div>
+        <div id="user-display" class="window">You: 
+          <img src="" alt="placeholder img"></div>
         <div id="user-selections">
-          <button class="selection"><img src="" alt=""></button>
-          <button class="selection"><img src="" alt=""></button>
-          <button class="selection"><img src="" alt=""></button>
+          <button id="btn-rock" class="selection"><img src="" alt="button img"></button>
+          <button id="btn-paper" class="selection"><img src="" alt="button img"></button>
+          <button id="btn-scissor" class="selection"><img src="" alt="button img"></button>
         </div>
       </div>
 
       <!-- this is the result for individual rounds -->
       <div class="round-result">
-        <img src="" alt="">
+        <img src="" alt="round result img">
       </div>
 
     </div>
