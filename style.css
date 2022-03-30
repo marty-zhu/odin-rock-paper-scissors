@@ -42,6 +42,7 @@ div.game-area {
 }
 
 div.window {
+    /* TODO: position display label to top right corner of window */
     width: auto;
     height: 25vh;
 }
