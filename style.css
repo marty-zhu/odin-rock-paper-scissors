@@ -41,6 +41,11 @@ div.game-area {
     gap: 8px;
 }
 
+div.window {
+    width: 25vh;
+    height: 25vh;
+}
+
 div#user-selections {
     display: flex;
     justify-content: space-between;
