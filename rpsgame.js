@@ -14,20 +14,20 @@ function getRandInt(min, max) {
 // <!-- for each round -->
 function playRound() {
 
-      <!-- ask the user to make a choice -->
+      // <!-- ask the user to make a choice -->
       const input = prompt("Rock[1], Paper[2], or Scissor[3]?");
 
       let userChoice = parseInt(input);
       let compChoice = getRandInt(1, 4);
 
-      <!-- show what the computer's choice was -->
+      // <!-- show what the computer's choice was -->
       console.log(`You: ${options[userChoice - 1]}`);
       console.log(`Comp: ${options[compChoice - 1]}`);
 
-      <!-- show whether the user won or lost -->
+      // <!-- show whether the user won or lost -->
       result = compare(userChoice, compChoice);
 
-      <!-- record the results of each game -->
+      // <!-- record the results of each game -->
       if (result === 0) {
             score.user++;
       } else if (result === 1) {
