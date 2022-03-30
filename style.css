@@ -41,6 +41,12 @@ div.game-area {
     gap: 8px;
 }
 
+div#user-selections {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
 div#user-selections button {
     border-radius: 10px;
     background-color: #fff;
