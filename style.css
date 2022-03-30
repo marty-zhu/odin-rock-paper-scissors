@@ -16,7 +16,7 @@ div.game-interface {
     flex-wrap: wrap;
     min-width: 60vw;
     justify-content: space-between;
-    gap: 8px;
+    gap: 8px;  /* check for responsiveness later */
 }
 
 /* general utility CSS */
@@ -37,6 +37,7 @@ div.game-area {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    gap: 8px;
 }
 
 /* round results CSS */
