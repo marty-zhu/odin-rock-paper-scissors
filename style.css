@@ -41,6 +41,16 @@ div.game-area {
     gap: 8px;
 }
 
+div#user-selections button {
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+div#user-selections img {
+    max-width: 100px;
+    object-fit: cover;
+}
+
 /* round results CSS */
 
 div.round-result {
