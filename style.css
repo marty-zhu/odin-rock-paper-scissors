@@ -44,6 +44,12 @@ div.game-area {
 div#user-selections button {
     border-radius: 10px;
     background-color: #fff;
+    transition: 0.5;
+}
+
+div#user-selections button:hover {
+    background-color: gold;
+    transform: scale(1.05);
 }
 
 div#user-selections img {
