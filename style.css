@@ -52,6 +52,10 @@ div#user-selections button:hover {
     transform: scale(1.05);
 }
 
+div#user-selections button:active {
+    transform: scale(0.95);
+}
+
 div#user-selections img {
     max-width: 100px;
     object-fit: cover;
