@@ -42,7 +42,7 @@ div.game-area {
 }
 
 div.window {
-    width: 25vh;
+    width: auto;
     height: 25vh;
 }
 
