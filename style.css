@@ -1,6 +1,7 @@
 body {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 div.container {
@@ -15,6 +16,7 @@ div.game-interface {
     flex-wrap: wrap;
     min-width: 60vw;
     justify-content: space-between;
+    gap: 8px;
 }
 
 /* general utility CSS */
