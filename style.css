@@ -17,6 +17,14 @@ div.game-interface {
     justify-content: space-between;
 }
 
+/* general utility CSS */
+
+div.framed {
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 8px;
+}
+
 /* score board CSS */
 
 
