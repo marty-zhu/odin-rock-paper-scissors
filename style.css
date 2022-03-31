@@ -42,24 +42,30 @@ div.game-area {
 }
 
 div.window {
-    /* TODO: position display label to top right corner of window */
     position: relative;
     width: auto;
     height: 25vh;
 }
 
-#comp-label {
+div.window.framed p {
+    /* applies to both comp and user window labels */
     position: absolute;
     top: 0;
+    margin-top: -2px;  /* makes sure the top margin blend in with the frame */
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#comp-label {  
+    /* positions left and blends in with frame */
     left: 0;
-    margin: 0;
+    margin-left: -2px;
 }
 
 #user-label {
-    position: absolute;
-    top: 0;
+    /* positions right and blends in with frame */
     right: 0;
-    margin: 0;
+    margin-right: -2px;
 }
 
 div#user-selections {
