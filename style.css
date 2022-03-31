@@ -43,8 +43,23 @@ div.game-area {
 
 div.window {
     /* TODO: position display label to top right corner of window */
+    position: relative;
     width: auto;
     height: 25vh;
+}
+
+#comp-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
+
+#user-label {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
 }
 
 div#user-selections {
