@@ -20,6 +20,19 @@ div.game-interface {
     gap: 8px;  /* check for responsiveness later */
 }
 
+button {
+    transition: 0.5;
+}
+
+button:hover {
+    background-color: gold;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
 /* general utility CSS */
 
 div.framed {
@@ -38,9 +51,9 @@ div#left-panel {
 }
 
 div#left-panel button {
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
-    background-color: #fff;
+    font-weight: bold;
 }
 
 /* game arena CSS */
@@ -88,16 +101,10 @@ div#user-selections {
 div#user-selections button {
     border-radius: 10px;
     background-color: #fff;
-    transition: 0.5;
 }
 
 div#user-selections button:hover {
     background-color: gold;
-    transform: scale(1.05);
-}
-
-div#user-selections button:active {
-    transform: scale(0.95);
 }
 
 div#user-selections img {
