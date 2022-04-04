@@ -43,31 +43,31 @@ function restartGame() {
 
 // compare the users choice and the computer's choice -->
 function compare(user, computer) {
-  <!-- if choices are the same then it's a tie -->
+      // <!-- if choices are the same then it's a tie -->
       if (user === computer) {
             console.log("It's a tie!");
             return 2;
-  <!-- if user chose rock and comp chose paper, then comp wins -->
+      // <!-- if user chose rock and comp chose paper, then comp wins -->
       } else if (user === 1 && computer === 2) {
             console.log("You lose! Paper beats Rock!");
             return 1;
-  <!-- if user chose rock and comp chose scissor, then user wins -->
+      // <!-- if user chose rock and comp chose scissor, then user wins -->
       } else if (user === 1 && computer === 3) {
             console.log("You win! Rock beats Scissor!");
             return 0;
-  <!-- if user chose paper and comp chose rock, then user wins -->
+      // <!-- if user chose paper and comp chose rock, then user wins -->
       } else if (user === 2 && computer === 1) {
             console.log("You Win! Paper beats Rock!");
             return 0;
-  <!-- if user chose paper and comp chose scissor, then comp wins -->
+      // <!-- if user chose paper and comp chose scissor, then comp wins -->
       } else if (user === 2 && computer === 3) {
             console.log("You Lose! Scissor beats Paper!");
             return 1;
-  <!-- if user chose scissor and comp chose rock, then comp wins -->
+      // <!-- if user chose scissor and comp chose rock, then comp wins -->
       } else if (user === 3 && computer === 1) {
             console.log("You Lose! Rock beats Scissor!");
             return 1;
-  <!-- if user chose scissor and comp chose paper, then user wins -->
+      // <!-- if user chose scissor and comp chose paper, then user wins -->
       } else {
             console.log("You Win! Scissor beats Paper!");
             return 0;
@@ -79,10 +79,10 @@ round = 1;
 // loop through 5 rounds -->
 while (round <= 5) {
 
-      <!-- for each of the 5 rounds -->
+      //<!-- for each of the 5 rounds -->
       playRound();
 
-      <!-- continue until 5 rounds -->
+      //<!-- continue until 5 rounds -->
       round++;
     }
 
