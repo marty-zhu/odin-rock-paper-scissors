@@ -28,9 +28,14 @@ div.framed {
     padding: 8px;
 }
 
-/* score board CSS */
+/* left panel CSS */
 
-
+div#left-panel {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 15px;
+}
 
 /* game arena CSS */
 
