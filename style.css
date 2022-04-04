@@ -33,8 +33,14 @@ div.framed {
 div#left-panel {
     display: flex;
     flex-flow: column nowrap;
-    align-items: center;
+    align-items: stretch;
     gap: 15px;
+}
+
+div#left-panel button {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #fff;
 }
 
 /* game arena CSS */
