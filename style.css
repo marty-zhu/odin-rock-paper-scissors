@@ -86,6 +86,12 @@ div.window.framed p {
     border-radius: 10px;
 }
 
+div#comp-display {
+    background: url(./imgs/loadingElips.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 #comp-label {  
     /* positions left and blends in with frame */
     left: 0;
