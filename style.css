@@ -92,6 +92,12 @@ div#comp-display {
     background-position: center center;
 }
 
+div#user-display {
+    background: url(./imgs/loadingElips.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
 #comp-label {  
     /* positions left and blends in with frame */
     left: 0;
