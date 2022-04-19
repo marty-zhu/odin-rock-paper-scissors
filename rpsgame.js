@@ -1,4 +1,5 @@
 const options = ['rock', 'paper', 'scissor'];
+
 let score = {
       'user': 0,
       'comp': 0,
@@ -12,12 +13,12 @@ function getRandInt(min, max) {
 };
 
 // <!-- for each round -->
-function playRound() {
+function playRound(e) {
 
       // <!-- ask the user to make a choice -->
-      const input = prompt("Rock[1], Paper[2], or Scissor[3]?");
+      // const input = prompt("Rock[1], Paper[2], or Scissor[3]?");
 
-      let userChoice = parseInt(input);
+      let userChoice = parseInt(e.target.dataset.choiceCode);
       let compChoice = getRandInt(1, 4);
 
       // <!-- show what the computer's choice was -->
