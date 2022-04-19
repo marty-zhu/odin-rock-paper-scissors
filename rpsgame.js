@@ -13,6 +13,15 @@ function getRandInt(min, max) {
       return Math.floor(rand);
 };
 
+function revealSelections(choiceCode) {
+    imgElem = document.querySelector(`img#user-choice-${choiceCode}`);
+    imgElem.classList.toggle('show');
+
+    setTimeout(() => {
+        imgElem.classList.remove('show');
+    }, 1000);
+}
+
 // <!-- for each round -->
 function playRound(e) {
 
@@ -25,6 +34,8 @@ function playRound(e) {
       // <!-- show what the computer's choice was -->
       console.log(`You: ${options[userChoice - 1]}`);
       console.log(`Comp: ${options[compChoice - 1]}`);
+
+    revealSelections(userChoice);
 
       // <!-- show whether the user won or lost -->
       result = compare(userChoice, compChoice);

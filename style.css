@@ -110,6 +110,10 @@ div#user-display img {
     max-height: 100%;
 }
 
+div#user-display img.show {
+    display: block;
+}
+
 #comp-label {  
     /* positions left and blends in with frame */
     left: 0;
