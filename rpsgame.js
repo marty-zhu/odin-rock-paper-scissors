@@ -1,5 +1,4 @@
 const userButtons = document.querySelectorAll('button.selection');
-console.log(userButtons);
 const options = ['rock', 'paper', 'scissor'];
 
 let score = {
@@ -85,34 +84,3 @@ function compare(user, computer) {
 };
 
 assignListners(userButtons);
-
-//round = 1;
-
-//// loop through 5 rounds -->
-//while (round <= 5) {
-
-//      //<!-- for each of the 5 rounds -->
-//      playRound();
-
-//      //<!-- continue until 5 rounds -->
-//      round++;
-//    }
-
-//// report on overall score -->
-//if (score.comp > score.user) {
-//      console.log(`You lost to the computer ${score.user} to ${score.comp}...`);
-//} else if (score.comp < score.user) {
-//      console.log(`You beat the computer ${score.user} to ${score.comp}!`);
-//} else {
-//      console.log(`It was a tie! ${score.user} to ${score.comp}.`)
-//}
-
-//// ask if the user wants to replay -->
-//restart = prompt("Do you want to play again? [y/n]")
-
-//// if user answers "yes", then restart the game -->
-//if (restart.toLowerCase() === 'y') {
-//      restartGame();
-//} else {
-//      console.log("Good bye!")
-//}
