@@ -14,6 +14,8 @@ function getRandInt(min, max) {
 };
 
 function revealSelections(choiceCode) {
+    // TODO: add same functionality for comp display area
+    //
     imgElem = document.querySelector(`img#user-choice-${choiceCode}`);
     imgElem.classList.toggle('show');
 
