@@ -40,6 +40,13 @@ function playRound(e) {
       }
 }
 
+function assignListners(nodeList) {
+    for (let selection of nodeList) {
+        selection.addEventListener('click', playRound(e));
+        console.log(`Event assigned to ${selection}`);
+    }
+}
+
 function restartGame() {
       location.reload()
 }
