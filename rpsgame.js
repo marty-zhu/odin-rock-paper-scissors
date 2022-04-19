@@ -42,8 +42,8 @@ function playRound(e) {
 
 function assignListners(nodeList) {
     for (let node of nodeList) {
-        node.addEventListener('click', playRound(e));
-        console.log(`Event assigned to ${selection}`);
+        node.addEventListener('click', playRound);
+        console.log(`Event assigned to ${node}`);
     }
 }
 
