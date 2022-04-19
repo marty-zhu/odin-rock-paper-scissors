@@ -1,3 +1,5 @@
+const userButtons = document.querySelectorAll('button.selection');
+console.log(userButtons);
 const options = ['rock', 'paper', 'scissor'];
 
 let score = {
