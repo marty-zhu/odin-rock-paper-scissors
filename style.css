@@ -93,9 +93,21 @@ div#comp-display {
 }
 
 div#user-display {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     background: url(./imgs/loadingElips.gif);
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+div#user-display img {
+    display: none;
+    position: absolute;
+    background: #fff;
+    overflow: hidden;
+    max-height: 100%;
 }
 
 #comp-label {  
