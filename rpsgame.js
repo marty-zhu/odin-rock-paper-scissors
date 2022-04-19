@@ -41,8 +41,8 @@ function playRound(e) {
 }
 
 function assignListners(nodeList) {
-    for (let selection of nodeList) {
-        selection.addEventListener('click', playRound(e));
+    for (let node of nodeList) {
+        node.addEventListener('click', playRound(e));
         console.log(`Event assigned to ${selection}`);
     }
 }
@@ -84,33 +84,35 @@ function compare(user, computer) {
       }
 };
 
-round = 1;
+assignListners(userButtons);
 
-// loop through 5 rounds -->
-while (round <= 5) {
+//round = 1;
 
-      //<!-- for each of the 5 rounds -->
-      playRound();
+//// loop through 5 rounds -->
+//while (round <= 5) {
 
-      //<!-- continue until 5 rounds -->
-      round++;
-    }
+//      //<!-- for each of the 5 rounds -->
+//      playRound();
 
-// report on overall score -->
-if (score.comp > score.user) {
-      console.log(`You lost to the computer ${score.user} to ${score.comp}...`);
-} else if (score.comp < score.user) {
-      console.log(`You beat the computer ${score.user} to ${score.comp}!`);
-} else {
-      console.log(`It was a tie! ${score.user} to ${score.comp}.`)
-}
+//      //<!-- continue until 5 rounds -->
+//      round++;
+//    }
 
-// ask if the user wants to replay -->
-restart = prompt("Do you want to play again? [y/n]")
+//// report on overall score -->
+//if (score.comp > score.user) {
+//      console.log(`You lost to the computer ${score.user} to ${score.comp}...`);
+//} else if (score.comp < score.user) {
+//      console.log(`You beat the computer ${score.user} to ${score.comp}!`);
+//} else {
+//      console.log(`It was a tie! ${score.user} to ${score.comp}.`)
+//}
 
-// if user answers "yes", then restart the game -->
-if (restart.toLowerCase() === 'y') {
-      restartGame();
-} else {
-      console.log("Good bye!")
-}
+//// ask if the user wants to replay -->
+//restart = prompt("Do you want to play again? [y/n]")
+
+//// if user answers "yes", then restart the game -->
+//if (restart.toLowerCase() === 'y') {
+//      restartGame();
+//} else {
+//      console.log("Good bye!")
+//}
