@@ -16,7 +16,7 @@ function getRandInt(min, max) {
 function revealSelections(userChoice, compChoice) {
 
     userChoiceImg = document.querySelector(`img#user-choice-${userChoice}`);
-    compChoiceImg = document.querySelector(`img#comp-choice-${compChoice}`)
+    compChoiceImg = document.querySelector(`img#comp-choice-${compChoice}`);
 
     userChoiceImg.classList.toggle('show');
     compChoiceImg.classList.toggle('show');
