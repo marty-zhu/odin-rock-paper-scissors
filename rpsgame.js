@@ -13,14 +13,18 @@ function getRandInt(min, max) {
       return Math.floor(rand);
 };
 
-function revealSelections(choiceCode) {
+function revealSelections(userChoice, compChoice) {
     // TODO: add same functionality for comp display area
     //
-    imgElem = document.querySelector(`img#user-choice-${choiceCode}`);
-    imgElem.classList.toggle('show');
+    userChoiceImg = document.querySelector(`img#user-choice-${userChoice}`);
+    compChoiceImg = document.querySelector(`img#comp-choice-${compChoice}`)
+
+    userChoiceImg.classList.toggle('show');
+    compChoiceImg.classList.toggle('show');
 
     setTimeout(() => {
-        imgElem.classList.remove('show');
+        userChoiceImg.classList.remove('show');
+        compChoiceImg.classList.remove('show');
     }, 1000);
 }
 
@@ -37,7 +41,7 @@ function playRound(e) {
       console.log(`You: ${options[userChoice - 1]}`);
       console.log(`Comp: ${options[compChoice - 1]}`);
 
-    revealSelections(userChoice);
+    revealSelections(userChoice, compChoice);
 
       // <!-- show whether the user won or lost -->
       result = compare(userChoice, compChoice);
