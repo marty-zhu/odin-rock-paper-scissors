@@ -122,7 +122,8 @@ div#user-display img {
     max-height: 100%;
 }
 
-div.window.framed img.show {
+div#user-display img.show,
+div#comp-display img.show {
     display: block;
 }
 
