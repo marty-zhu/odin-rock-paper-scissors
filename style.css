@@ -87,9 +87,21 @@ div.window.framed p {
 }
 
 div#comp-display {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
     background: url(./imgs/loadingElips.gif);
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+div#comp-display img {
+    display: none;
+    position: absolute;
+    background: #fff;
+    overflow: hidden;
+    max-height: 100%;
 }
 
 div#user-display {
@@ -110,7 +122,7 @@ div#user-display img {
     max-height: 100%;
 }
 
-div#user-display img.show {
+div.window.framed img.show {
     display: block;
 }
 
