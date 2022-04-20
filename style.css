@@ -99,6 +99,7 @@ div#comp-display {
 div#comp-display img {
     display: none;
     position: absolute;
+    transform: rotate(180deg);
     background: #fff;
     overflow: hidden;
     max-height: 100%;
