@@ -14,8 +14,7 @@ function getRandInt(min, max) {
 };
 
 function revealSelections(userChoice, compChoice) {
-    // TODO: add same functionality for comp display area
-    //
+
     userChoiceImg = document.querySelector(`img#user-choice-${userChoice}`);
     compChoiceImg = document.querySelector(`img#comp-choice-${compChoice}`)
 
