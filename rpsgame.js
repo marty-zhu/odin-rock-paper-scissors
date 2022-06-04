@@ -1,7 +1,6 @@
 const userButtons = document.querySelectorAll('button.selection');
 const options = ['rock', 'paper', 'scissor'];
-const compScore = document.querySelector('span#comp-score');
-const userScore = document.querySelector('span#user-score');
+const scoreBoard = document.querySelector('div#scorebaord');
 
 let score = {
     'user': 0,
