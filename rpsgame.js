@@ -1,6 +1,6 @@
 const userButtons = document.querySelectorAll('button.selection');
 const options = ['rock', 'paper', 'scissor'];
-const scoreBoard = document.querySelector('div#scorebaord');
+const scoreBoard = document.querySelector('div#scoreboard');
 
 let score = {
     'user': 0,
@@ -55,11 +55,18 @@ function playRound(e) {
         score.tie++;
     };
 
-    console.log(score);
+    // console.log(score);
+    updateScore();
 };
 
-function updateScore(score) {
+function updateScore() {
+    const compScore = scoreBoard.querySelector('span#comp-score');
+    const userScore = scoreBoard.querySelector('span#user-score');
+    const tieCount = scoreBoard.querySelector('span#tie-score');
 
+    // compScore.innerText = score.comp;
+    // userScore.innerText = score.user;
+    // tieCount.innerText = score.tie;
 }
 
 function assignListners(nodeList) {
