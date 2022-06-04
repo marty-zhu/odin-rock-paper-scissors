@@ -64,9 +64,9 @@ function updateScore() {
     const userScore = scoreBoard.querySelector('span#user-score');
     const tieCount = scoreBoard.querySelector('span#tie-score');
 
-    // compScore.innerText = score.comp;
-    // userScore.innerText = score.user;
-    // tieCount.innerText = score.tie;
+    compScore.innerText = score.comp;
+    userScore.innerText = score.user;
+    tieCount.innerText = score.tie;
 }
 
 function assignListners(nodeList) {
