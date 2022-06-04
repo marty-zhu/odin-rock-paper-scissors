@@ -1,5 +1,7 @@
 const userButtons = document.querySelectorAll('button.selection');
 const options = ['rock', 'paper', 'scissor'];
+const compScore = document.querySelector('span#comp-score');
+const userScore = document.querySelector('span#user-score');
 
 let score = {
     'user': 0,
@@ -52,7 +54,13 @@ function playRound(e) {
         score.comp++;
     } else {
         score.tie++;
-    }
+    };
+
+    console.log(score);
+};
+
+function updateScore(score) {
+
 }
 
 function assignListners(nodeList) {
